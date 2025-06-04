@@ -1,8 +1,8 @@
 body {
   position: relative;
-  margin: 0;
+  margin: 15px;
   padding: 0;
-  width: 100%;
+  /* width: 100%; */
   background-color: rgb(17, 16, 16);
   color: rgba(50, 255, 0, 0.5);
   font-family: "VT323", monospace;
@@ -66,7 +66,7 @@ pre {
 .Container {
   display: flex;
   justify-content: center;
-  max-width: 100vw;
+  /* max-width: 100%; */
   margin: 0 auto;
   text-shadow: 0.44px 0 1px rgba(0, 30, 255, 0.5),
     -0.44px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
@@ -83,7 +83,7 @@ pre {
 .InformationContainer {
   display: flex;
   flex-direction: column;
-  max-width: 100vw;
+  /* max-width: 100%; */
   margin: 0 auto;
 }
 
@@ -104,7 +104,7 @@ pre {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 100vw;
+  /* max-width: 100%; */
   margin: 60px auto 0 auto;
   font-size: 0.7em;
   opacity: 0.6;
@@ -262,8 +262,8 @@ pre {
   }
 }
 
-@media screen and (max-width: 1080px) {
+/* @media screen and (max-width: 1080px) {
   body {
     font-size: large;
   }
-}
+} */
