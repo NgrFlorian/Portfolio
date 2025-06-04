@@ -6,24 +6,31 @@ body {
   background-color: rgb(17, 16, 16);
   color: rgba(50, 255, 0, 0.5);
   font-family: "VT323", monospace;
+  font-size: large;
 }
-
 pre {
   font-size: 1vw;
+}
 
-  @media screen and (min-width: 600px) {
+/* @media screen and (min-width: 600px) {
+  pre {
     font-size: 0.8vw;
   }
+} */
 
-  @media screen and (min-width: 900px) {
+@media screen and (min-width: 900px) {
+  pre {
     font-size: 0.7vw;
   }
+}
 
-  @media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  pre {
     font-size: 0.6vw;
   }
-
 }
+
+
 
 .Container::after {
   content: " ";
@@ -252,5 +259,11 @@ pre {
 
   100% {
     box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    font-size: x-large;
   }
 }
