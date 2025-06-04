@@ -1,5 +1,3 @@
-
-
 body {
   position: relative;
   margin: 0;
@@ -8,6 +6,23 @@ body {
   background-color: rgb(17, 16, 16);
   color: rgba(50, 255, 0, 0.5);
   font-family: "VT323", monospace;
+}
+
+pre {
+  font-size: 1vw;
+
+  @media screen and (min-width: 600px) {
+    font-size: 0.8vw;
+  }
+
+  @media screen and (min-width: 900px) {
+    font-size: 0.7vw;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 0.6vw;
+  }
+
 }
 
 .Container::after {
@@ -44,7 +59,7 @@ body {
 .Container {
   display: flex;
   justify-content: center;
-  max-width: 40vw;
+  max-width: 100vw;
   margin: 0 auto;
   text-shadow: 0.44px 0 1px rgba(0, 30, 255, 0.5),
     -0.44px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
@@ -61,7 +76,7 @@ body {
 .InformationContainer {
   display: flex;
   flex-direction: column;
-  max-width: 40vw;
+  max-width: 100vw;
   margin: 0 auto;
 }
 
@@ -82,7 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 40vw;
+  max-width: 100vw;
   margin: 60px auto 0 auto;
   font-size: 0.7em;
   opacity: 0.6;
@@ -96,17 +111,6 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     font-size: 0.9em;
-  }
-
-  .Container {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-  }
-
-  .Content {
-    position: relative;
-    padding: 20px;
   }
 }
 
@@ -225,21 +229,27 @@ body {
   0% {
     box-shadow: 0 0 0 0px rgba(7, 187, 1, 0.5), 0 0 10px #0c7e11;
   }
+
   30% {
     box-shadow: 0 0 0 12px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
   }
+
   31% {
     box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
   }
+
   32% {
     box-shadow: 0 0 0 0px rgba(7, 187, 1, 0.5), 0 0 10px #0c7e11;
   }
+
   63% {
     box-shadow: 0 0 0 12px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
   }
+
   80% {
     box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
   }
+
   100% {
     box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
   }

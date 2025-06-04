@@ -17,18 +17,38 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// $(document).ready(function() {
+//     const $btn = $(".btn-escape");
+//     const $wrap = $(".body");
+
+//     $btn.on("mouseover", function() {
+
+//         const maxTop = $wrap.innerHeight() - $btn.outerHeight();
+//         const maxLeft = $wrap.innerWidth() - $btn.outerWidth();
+
+//         $(this).css({ 
+//             top: Math.random() * maxTop + 'px',
+//             left: Math.random() * maxLeft + 'px'
+//         });
+//     });
+// });
 $(document).ready(function() {
     const $btn = $(".btn-escape");
     const $wrap = $(".body");
 
-    $btn.on("mouseover", function() {
-
+    function moveBtn() {
         const maxTop = $wrap.innerHeight() - $btn.outerHeight();
         const maxLeft = $wrap.innerWidth() - $btn.outerWidth();
 
-        $(this).css({ 
+        $btn.css({ 
             top: Math.random() * maxTop + 'px',
             left: Math.random() * maxLeft + 'px'
         });
+    }
+
+    $btn.on("mouseover", moveBtn);
+    $btn.on("touchstart", function(e) {
+        moveBtn();
+        e.preventDefault(); // évite le clic immédiat sur mobile
     });
 });
