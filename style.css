@@ -12,11 +12,11 @@ pre {
   font-size: 1vw;
 }
 
-/* @media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   pre {
     font-size: 0.8vw;
   }
-} */
+}
 
 @media screen and (min-width: 900px) {
   pre {
@@ -264,6 +264,6 @@ pre {
 
 @media screen and (max-width: 1080px) {
   body {
-    font-size: x-large;
+    font-size: large;
   }
 }
