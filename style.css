@@ -1,6 +1,4 @@
-/* * {
-  box-shadow: rgb(2, 109, 20) 0px 0px 10px;
-} */
+
 
 body {
   position: relative;
@@ -24,6 +22,7 @@ body {
   z-index: 2;
   pointer-events: none;
 }
+
 .Container::before {
   content: " ";
   display: block;
@@ -33,12 +32,10 @@ body {
   bottom: 0;
   right: 0;
   background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
-    linear-gradient(
-      90deg,
+    linear-gradient(90deg,
       rgba(255, 0, 0, 0.06),
       rgba(0, 255, 0, 0.02),
-      rgba(0, 0, 255, 0.06)
-    );
+      rgba(0, 0, 255, 0.06));
   z-index: 2;
   background-size: 100% 2px, 3px 100%;
   pointer-events: none;
@@ -60,6 +57,7 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
 .InformationContainer {
   display: flex;
   flex-direction: column;
@@ -89,6 +87,7 @@ body {
   font-size: 0.7em;
   opacity: 0.6;
 }
+
 .email {
   color: rgba(50, 255, 0, 0.5);
   text-decoration: none;
@@ -121,46 +120,57 @@ body {
     text-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
       -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   40% {
     text-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
       -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   45% {
     text-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
       -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   50% {
     text-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
       -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   65% {
     text-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
       -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   70% {
     text-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
       -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   75% {
     text-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
       -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   80% {
     text-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
       -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   85% {
     text-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
       -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   90% {
     text-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
       -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   95% {
     text-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
       -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
   }
+
   100% {
     text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
       -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
@@ -171,35 +181,66 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
 
 @keyframes glitch {
-  40%, 43% {
+
+  40%,
+  43% {
     opacity: 1;
     transform: scale(1, 1) skew(0, 0);
   }
-  41%, 42% {
+
+  41%,
+  42% {
     opacity: 0.8;
     transform: scale(1, 1.2) skew(80deg, 0);
   }
 }
 
 .btn-escape {
-    display: block;
-    position: absolute;
-    margin: 30px;
-    width: 40px;
-    height: 40px;
-    background-color: #0c7e11;
-    box-shadow: 0 0 10px #0c7e11;
-    border: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #000;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  display: block;
+  position: absolute;
+  margin: 30px;
+  width: 40px;
+  height: 40px;
+  background-color: #0c7e11;
+  box-shadow: 0 0 10px #0c7e11;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(7, 187, 1, 0.5), 0 0 10px #0c7e11;
+  }
+  30% {
+    box-shadow: 0 0 0 12px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
+  }
+  31% {
+    box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
+  }
+  32% {
+    box-shadow: 0 0 0 0px rgba(7, 187, 1, 0.5), 0 0 10px #0c7e11;
+  }
+  63% {
+    box-shadow: 0 0 0 12px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
+  }
+  80% {
+    box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
+  }
+  100% {
+    box-shadow: 0 0 0 0px rgba(7, 187, 1, 0), 0 0 10px #0c7e11;
+  }
 }
