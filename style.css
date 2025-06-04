@@ -1,0 +1,205 @@
+/* * {
+  box-shadow: rgb(2, 109, 20) 0px 0px 10px;
+} */
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgb(17, 16, 16);
+  color: rgba(50, 255, 0, 0.5);
+  font-family: "VT323", monospace;
+}
+
+.Container::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.Container::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(
+      90deg,
+      rgba(255, 0, 0, 0.06),
+      rgba(0, 255, 0, 0.02),
+      rgba(0, 0, 255, 0.06)
+    );
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  max-width: 40vw;
+  margin: 0 auto;
+  text-shadow: 0.44px 0 1px rgba(0, 30, 255, 0.5),
+    -0.44px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  height: 100%;
+}
+
+.Content {
+  animation: on 3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.InformationContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 40vw;
+  margin: 0 auto;
+}
+
+.Link,
+.Zelda {
+  color: rgba(38, 168, 5, 0.63);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.Linkedin {
+  animation: glitch 2s infinite;
+  margin: 30px 0;
+  display: block;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40vw;
+  margin: 60px auto 0 auto;
+  font-size: 0.7em;
+  opacity: 0.6;
+}
+.email {
+  color: rgba(50, 255, 0, 0.5);
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  .Container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .Content {
+    position: relative;
+    padding: 20px;
+  }
+}
+
+@keyframes textShadow {
+  0% {
+    text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+      -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+
+  35% {
+    text-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+      -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  40% {
+    text-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+      -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  45% {
+    text-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+      -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  50% {
+    text-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+      -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  65% {
+    text-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+      -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  70% {
+    text-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+      -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  75% {
+    text-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+      -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  80% {
+    text-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+      -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  85% {
+    text-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+      -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  90% {
+    text-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+      -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  95% {
+    text-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+      -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+  100% {
+    text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+      -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+  }
+}
+
+@keyframes on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes glitch {
+  40%, 43% {
+    opacity: 1;
+    transform: scale(1, 1) skew(0, 0);
+  }
+  41%, 42% {
+    opacity: 0.8;
+    transform: scale(1, 1.2) skew(80deg, 0);
+  }
+}
+
+.btn-escape {
+    display: block;
+    position: absolute;
+    margin: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: #0c7e11;
+    box-shadow: 0 0 10px #0c7e11;
+    border: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
